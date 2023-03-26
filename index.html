@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+  
+</head>
+   
+<body>
+    <div><header class="header">
+        <div>
+        <img class="head" src="data:image/png;base64,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" >
+        <img class="head"src="data:image/png;base64,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">
+        <img class="head"src="data:image/png;base64,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">
+        <img class="head"src="data:image/png;base64,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">
+        </div>
+        <div class="cell">
+        <i class="fa fa-phone" aria-hidden="true"></i><span class="sp">+92(304)386-6719</span>
+        <i class="fa fa-phone" aria-hidden="true"></i> <span class="sp">+92(317)011-3001</span>
+        </div>
+        <div id="bot">
+    <button type="button" class="btn">Call Back</button>
+        </div>
+    </header>
+    </div>
+    
+    <nav id="navbar">
+      <div class="logo"><img  src="assets/imges/logo.png" height="50px" width="110px"></div>
+      
+       <ul>
+            <li class="item"><a href="#services_container">WHY US</a></li>
+            <li class="item"><a href="#about_us">ABOUT</a></li>
+            <li class="item"><a href="#OUR_services">SERVICESS</a></li>
+            <li class="item"><a href="#our_port">PORTFOLIO</a></li>
+            <li class="item"><a href="#OUR_PROCESS">PROCESS</a></li>
+            <li class="item"><a href="#PEOPLE ABOUT US">REVIEWS</a></li>
+            <li class="item"><a href="#OUR CONTACTS">CONTACT US</a></li>
+            <li class="item"><a href="#footer">LINKS</a></li>
+            
+        </ul>
+      
+    </nav>
+    <section id="home">
+      <h1 class="h_primaryo">WE ARE EXPERTS</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic atque ratione eum dignissimos nostrum quidem
+          odit quos ex, consequuntur aspernatur eligendi sequi optio rerum id a praesentium illo porro aut velit autem
+          maiores? Voluptatum?</p>
+      <button class="btnp">READ MORE</button>
+      </section>
+    <!-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/imges/img1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>WE ARE EXPERTS</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea soluta fugiat mollitia, autem animi debitis accusamus doloremque ab, ad aliquam neque fugit ut illo blanditiis modi quia explicabo! Minus, et.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/imges/img1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>WE ARE EXPERTS</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/imges/img1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>WE ARE EXPERTS</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   -->
+   
+          <section id="services_container">
+            <h1 class="h1">OUR <span id="ad">ADVANTAGES</span></h1>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis<br />
+                placeat repellendus enim maxime.</p>
+            <div id="services">
+                <div class="box">
+                    <img src="./assets/imges/bulb.jpg" alt="" width="70px" height="70px">
+                    <h2 class="h_secondary center">INNOVATION</h2>
+                    <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quidem, velit non
+                        similique eius cum fuga expedita corporis earum quis perferendis sed veniam autem, quam repellat
+                        possimus iure inventore adipisci.</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/imges/thumb.jpg" alt="" width="70px" height="70px">
+                    <h2 class="h_secondary center">QUALITY</h2>
+                    <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quidem, velit non
+                        similique eius cum fuga expedita corporis earum quis perferendis sed veniam autem, quam repellat
+                        possimus iure inventore adipisci.</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/imges/clock.webp" alt="" width="70px" height="70px">
+                    <h2 class="h_secondary center">EXPERIENCE</h2>
+                    <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quidem, velit non
+                        similique eius cum fuga expedita corporis earum quis perferendis sed veniam autem, quam repellat
+                        possimus iure inventore adipisci.</p>
+                </div>
+                <div class="box">
+                  <img src="./assets/imges/contact us.jpg" alt="" width="70px" height="70px">
+                  <h2 class="h_secondary center">HAPPY CLIENTS</h2>
+                  <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quidem, velit non
+                      similique eius cum fuga expedita corporis earum quis perferendis sed veniam autem, quam repellat
+                      possimus iure inventore adipisci.</p>
+              </div>
+              <div class="box">
+                <img src="./assets/imges/message.png" alt="" width="70px" height="70px">
+                <h2 class="h_secondary center">SUPPORT</h2>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quidem, velit non
+                    similique eius cum fuga expedita corporis earum quis perferendis sed veniam autem, quam repellat
+                    possimus iure inventore adipisci.</p>
+            </div>
+            </div>
+        </section>
+        <h1 class="h1">ABOUT <span id="ad">US</span></h1>
+<section id="about_us">
+                <div class="about">
+                <p id="pr">Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Odio iure, vel, velit tempora consequatur
+                    facilis fuga adipisci enim fugit harum reprehenderit veniam,
+                    omnis dolorem accusantium fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum architecto est ducimus, maxime minima nam fuga aspernatur.<br> Adipisci enim fugit harum reprehenderit veniam,
+                    architectoadipisicing elit. Odio iure, vel, velit tempora consequaturfacilis fuga adipisci enimomnis dolorem accusantium fuga adipisci enim fugit harum reprehenderit veniam,
+                    architectoadipisicing elit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, mollitia. Accusantium veritatis ullam sit? Consequuntur quaerat, assumenda voluptatibus est vel alias, laborum velit excepturi corrupti nulla eius nobis rerum reiciendis.<br>facilis fuga adipisci enim fugit harum reprehenderit veniam,
+                    omnis dolorem accusantium fuga adipisci enim fugit harum reprehenderit veniam,
+                    architectoadipisicing elit. Odio iure, vel, velit tempora consequatur
+                    facilis fuga adipisci enimomnis dolorem accusantium fuga adipisci enim fugit harum reprehenderit veniam,
+                    architectoadipisicin Odio iure, vel, velit tempora consequatur
+                    facilis fuga adipisci fugit harum reprehenderit veniam,
+                    omnis dolorem accusantium archit eligendi Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia quae quis voluptates fugiat! Quidem cum et ipsa exercitationem delectus reiciendis, quaerat, corrupti culpa nostrum numquam ipsum earum placeat sed. .<br>
+                    <img class="read" src="./assets/imges/read.png"  width="150px" height="60px" ></p> 
+                </div>
+                <div id="com">       
+              <img src="./assets/imges/about.avif" alt="" width="500px" height="500px">
+                </div>
+              </section>
+
+              <section id="OUR_services">
+                <h1 class="h1">OUR <span id="ad">SERVICES</span></h1>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis<br />
+                    placeat repellendus enim maxime.</p>
+                <div id="OURSER">
+                    <div class="box">
+                        <img src="./assets/imges/star.jpg" alt="" width="90px" height="70px">
+                        <h2 class="secondary">WEB DESIGN</h2>
+                        <p class="centerL">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quidem, velit non
+                            similique eius cum fuga expedita corporis earum quis perferendis sed veniam autem, quam repellat
+                            possimus iure inventore adipisci.</p>
+                    </div>
+                    <div class="box">
+                        <img src="./assets/imges/star.jpg" alt="" width="90px" height="70px">
+                        <h2 class="secondary">GRAPHIC DESIGN</h2>
+                        <p class="centerL">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quidem, velit non
+                            similique eius cum fuga expedita corporis earum quis perferendis sed veniam autem, quam repellat
+                            possimus iure inventore adipisci.</p>
+                    </div>
+                    <div class="box">
+                        <img src="./assets/imges/star.jpg" alt="" width="90px" height="70px">
+                        <h2 class="secondary ">BRANDING</h2>
+                        <p class="centerL">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quidem, velit non
+                            similique eius cum fuga expedita corporis earum quis perferendis sed veniam autem, quam repellat
+                            possimus iure inventore adipisci.</p>
+                    </div>
+                    <div class="box">
+                      <img src="./assets/imges/star.jpg" alt="" width="90px" height="70px">
+                      <h2 class="secondary">MARKETING</h2>
+                      <p class="centerL">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quidem, velit non
+                          similique eius cum fuga expedita corporis earum quis perferendis sed veniam autem, quam repellat
+                          possimus iure inventore adipisci.</p>
+                  </div>
+                </div>
+  <section id="our_port">
+ <h1 class="h">OUR <span id="ad">PORTFOLIO</span> </h1>
+                  <p class="par">Find English Language Course In Usa. Search in 6 Search Engines at Once. 100+ Qualitative Results. Powerful and Easy to Use. Explore the Best Info Now. 
+                      elit. Alias, distinctio!</p>
+                    </br>
+                   <p class="word">WEBDESIGN GRAPHIC DESIGN BRANDING LOGO MARKETING ADVERTISMENT</p>
+                  </br>
+                      <div class="last">
+                          <img src="./assets/imges/g8.jpg" width="260px">
+                          <img src="./assets/imges/g1.png" width="190px">
+                          <img src="./assets/imges/g2.png" width="190px">
+                          <img src="./assets/imges/g3.png" width="195px">
+                          <img src="./assets/imges/g4.jpg" width="260px">
+                      </div>
+                    </br>
+                      <div class="last" >
+                          <img src="./assets/imges/g9.webp" width="190px">
+                          <img src="./assets/imges/g5.webp" width="165px">
+                          <img src="./assets/imges/g6.png" width="300px">
+                          <img src="./assets/imges/g7.png" width="270px">
+                          <img src="./assets/imges/g10.jpg" width="210px">
+                      </div>
+                    </section> 
+<SECTION ID="OUR_PROCESS">
+  <h1 class="hY">OUR <span id="ad">PROCESS</span> </h1>
+                      <P class="p2">Lorem ipsum , sit amet consectetur adipisicing elit.<br> Voluptatibus
+                          cupiditate ratione quaerat consequuntur atque? Doloremque.</P>
+                          <div id="OURPRO">
+                            <div class="box">
+                                <img src="./assets/imges/P1.png" alt="" width="90px" height="70px">
+                                <h2 class="secondary">WEB DESIGN</h2>
+                                <p class="centerL">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                   </p>
+                            </div>
+                            <div class="box">
+                                <img src="./assets/imges/P2.png" alt="" >
+                                <h2 class="secondary">GRAPHIC DESIGN</h2>
+                                <p class="centerL">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    
+                           </p>
+                            </div>
+                            <div class="box">
+                                <img src="./assets/imges/P3.png" alt="" >
+                                <h2 class="secondary ">BRANDING</h2>
+                                <p class="centerL">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    s</p>
+                            </div>
+                            <div class="box">
+                              <img src="./assets/imges/P4.png" alt="">
+                              <h2 class="secondary">MARKETING</h2>
+                              <p class="centerL">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                               .</p>
+                          </div>
+                          <div class="box">
+                            <img src="./assets/imges/P5.webp" alt="" >
+                            <h2 class="secondary">MARKETING</h2>
+                            <p class="centerL">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                               .</p>
+                        </div>
+                        <div class="box">
+                          <img src="./assets/imges/P6.webp" alt="" >
+                          <h2 class="secondary">MARKETING</h2>
+                          <p class="centerL">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                             </p>
+                      </div>
+                        </div>
+              </section>
+                  <!-- new div -->
+                  <section ID="PEOPLE ABOUT US">
+                    <div id="sec2">
+                    <h1 class="hY">PEOPLE <span id="ad">ABOUT US</span> </h1>
+                    <P class="p2">Lorem ipsum , sit amet consectetur adipisicing elit.<br> Voluptatibus
+                      cupiditate ratione quaerat consequuntur atque? Doloremque.</P>
+              
+                      <table class="table">
+                          <tr>
+                              <td><img src="./assets/imges/PEOPLE.png" width="70px"><b>JHON DOE</b><br>this is first image
+                                  <br>this is good bussiness man good bussiness man
+                              </td>
+                              <td><img src="./assets/imges/PEOPLE.png" width="70px"><b>JHON DOE</b><br>this is first image
+                                  <br>this is good bussiness man good bussiness man
+                              </td>
+                          </tr>
+                          <tr>
+                              <td><img src="./assets/imges/PEOPLE.png" width="70px"><b>JHON DOE</b><br>this is first image
+                                  <br>this is good bussiness man good bussiness man
+                              </td>
+                              <td><img src="./assets/imges/PEOPLE.png" width="70px"><b>JHON DOE</b><br>this is first image
+                                  <br>this is good bussiness man good bussiness man
+                              </td>
+                          </tr>
+                      </table>
+                    </div>
+              
+                    
+                
+                  <div class="sec3">
+                      <h1 class="h3">START YOUR NEW PROJECT</h1>
+                  </BR>
+                      <DIV class="FORM">
+                      <form action="#">
+                                      
+                           <input type=" text" name="text" placeholder="YOUR NAME">
+                          <input type="text" name="email" placeholder="YOUR EMAIL">
+                          <input type="text" name="text" placeholder="YOUR PHONE">
+                          <button CLASS="btnY">SEND REQUEST</button>
+                      </form>
+                    </DIV>
+                  </BR>
+                      <p class="gr">Lorem ipsum , sit amet consectetur adipisicing elit.<br> Voluptatibus
+                        cupiditate ratione quaerat consequuntur atque? Doloremque.
+                          </p>
+                  </div>
+                </section>
+              
+                  <!-- last section -->
+              
+              <SECTION ID="OUR CONTACTS">
+                  <div class="last">
+                    <h1 class="hY">OUR <span id="ad">CONTACTS</span> </h1>
+                      <P class="p2">Voluptatibus
+                        cupiditate ratione quaerat consequuntur atque? Doloremque.<br>Lorem ipsum , sit amet consectetur adipisicing elit.
+                        </P>
+                    
+                   
+                          <i class="fa fa-map-marker" aria-hidden="true"></i></i><span class="SPii">Lorem ipsum dolor, sit amet consectetur adipisicing elit,erspiciatis consectetur quia culpa explicabo numquam facilis neque soluta incidunt.</span></br>
+                          <i class="fa fa-phone" aria-hidden="true"></i><span class="SPii">+92(304)386-6719</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <i class="fa fa-phone" aria-hidden="true"></i> <span class="SPii">+92(317)011-3001</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <i class="fa fa-envelope" aria-hidden="true"></i><span class="SPii">Info@website.com</span>
+                  </div>
+              </SECTION>
+
+                  <img class="map" src="./assets/imges/map1.jpg" height="500px" width="100%">
+              
+                  <!-- footer -->
+                  <section id="footer">
+                  <div class="cloud">
+                          <img width="100px" src="./assets/imges/logo.png">
+                          <p class="clo">Lorem ipsum dolor sit</br> amet consectetur are</br>
+                              adipisicing lets begin</br> elit. Dolore, we will as</br>this is it  excuses assumenda </br>lorem ipsum dolor sit</br> amet consectetur are</br>
+                              adipisicing lets begin</br> elit. Dolore, we will as</br> 
+                      </p>
+                      </br>
+                      </br>
+                      </br>
+                      <br>
+                      <p class="clo">@Panacloud 2019</p>
+                  </div>
+              
+                <div class="ser"> 
+                <h2 class="ser3">SERVICES</h2>
+                <li><a href="Litraylly helpful">Litraylly helpful</a></li>
+                <li><a href="Litraylly helpful">Lorem seeing</a></li>
+                <li><a href="Litraylly helpful">Good Quality</a></li>
+                <li><a href="Litraylly helpful">Reservation</a></li>
+                <li><a href="Litraylly helpful">Booking layouts</a></li>
+                <li><a href="Litraylly helpful">Delivered hangouts</a></li>
+                <li><a href="Litraylly helpful">Serving the best</a></li>
+                <li><a href="Litraylly helpful">Notes & Hganouts</a></li>
+              </div>
+              <div class="useful"> 
+                <h2 class="use3">USEFUL LINKS</h2>
+                <li><a href="Litraylly helpful">Absolutely perfect</a></li>
+                <li><a href="Litraylly helpful">Seeing Through</a></li>
+                <li><a href="Litraylly helpful">Quality Check</a></li>
+                <li><a href="Litraylly helpful">Reservation</a></li>
+                <li><a href="Litraylly helpful">Booking layouts</a></li>
+                <li><a href="Litraylly helpful">Delivered hangouts</a></li>
+                <li><a href="Litraylly helpful">Serving the best</a></li>
+                <li><a href="Litraylly helpful">Hangouts & notes </a></li> 
+              </div>
+                  <div class="follow">
+                        <h2 class="follow3">CONTACTS</h2>
+                        <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;<span class="SPI">+92(304)386-6719</span></BR>
+                        <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;<span class="SPI">+92(304)386-6719</span></BR>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<span class="SPI">Info@website.com</span>
+                      </BR>
+                      </BR>
+                         <h2 class="follow3">FOLLOW US</h2>
+                         <i class="fa fa-whatsapp" aria-hidden="true"  ></i>
+                         <i class="fa fa-instagram" aria-hidden="true"></i>
+                         <i class="fa fa-twitter" aria-hidden="true"></i>
+                         <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                         <i class="fa fa-google-plus" aria-hidden="true"></i>
+                     </div>
+                    </section>           
+  </body>
+</html>

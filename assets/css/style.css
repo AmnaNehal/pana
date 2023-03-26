@@ -1,0 +1,457 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/* header */
+.header{
+    background-color: black;
+    display: flex;
+
+  
+}
+.head{
+    width:2em ;
+    height: 2em;
+    border-radius: 50%;
+}
+.cell{
+    margin-left: 63%;
+
+}
+.sp{
+    color: aliceblue;
+
+}
+.cell .fa-phone{
+    color: green;
+}
+#bot{
+margin-left: 1%;    
+}
+.btn{
+    border: 2px solid rgb(43, 159, 35);
+    background-color: rgb(28, 220, 28);
+}
+/* NAVBAR */
+#navbar{
+    display: flex;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Gowun Batang rev=1';
+    
+}
+.logo{
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    padding: 20px 40px;
+    margin-left: 1ch;
+   
+}
+#navbar ul li a{
+    color: rgb(7, 7, 7);
+
+    
+}
+#navbar ul li a:hover{
+    color: rgb(250, 249, 249);
+    background-color: rgb(240, 178, 44);
+}
+/* home */
+#home{
+    
+    background: url('../imges/home.jpg' )  no-repeat center center/cover;
+    text-align: center;
+    justify-content: center;
+}
+
+#home h1{
+    color: white;
+font-size: 500%;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+#home p{
+    color: white;
+    
+    font-size: 1.2rem;
+    font-family:'Bree Sarif', serif;
+
+    
+}
+.btnp{
+    padding: 6px 20px;
+    border: 2px solid orange;
+    background-color: orange;
+    margin: 25px;
+    font-size: 1.5rem;
+    border-radius:10px;  
+}
+/* services */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    
+    padding:10px;
+margin: 25px 6px;
+}
+
+#services .box img{
+    
+    margin: auto;
+    
+    display: block;
+}
+#services .box .h_secondary {
+    text-align: center;
+}
+#services .center{
+    text-align: center;
+    
+}
+
+.h1 {
+    text-align: center;
+    color: black;
+    font-size: 50px;
+}
+
+#ad {
+    color: rgb(6, 158, 6);
+
+}
+.para{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(131, 129, 129);
+}
+#about_us{
+    display: flex;
+    
+}
+#pr {
+    /* border: 2px solid black; */
+    height: 500px;
+    text-align: left;
+    width: 900px;
+    padding: 60PX;
+}
+#com{
+    margin-left: 3%;
+}
+/* ABOUT US END */
+/* OUR SERVIVICES */
+#OURSER{
+    display: flex;
+    
+}
+#OURSER .box{
+    padding:10px;
+    margin: 25px 6px;
+    border-radius: 28px;
+    border: 2px solid rgb(97, 94, 94);
+    background-color:#a8a2a2;
+}
+#OURSER .box img{
+    margin: auto;
+    display: block;
+    background-color: grey;
+}
+#OURSER .box .secondary{
+    text-align: center;
+}
+#OURSER .box .centerL{
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* OUR SERVICE END */
+/* PORTFOLIO */
+#our_port{
+    background-color: black;
+    text-align: center;
+}
+
+.h{
+    color: aliceblue;
+}
+.par{
+    text-align: center;
+    color: aliceblue;
+   
+}
+.word{
+    text-align: center;
+       word-spacing: 2em;
+       color: rgb(250, 242, 242);
+       font-size: 25px;
+   }
+.last img{
+    width: 250px;
+    height:250px;
+    padding:2px 3px ;
+}
+
+
+/* second page */
+
+.hY{
+    text-align: center;
+    color: black;
+
+}
+.p2{
+    text-align: center;
+    color: #a8a2a2;
+}
+#OURPRO{
+    display: flex;
+    
+}
+#OURPRO .box{
+    padding:10px;
+    margin: 25px 6px;
+}
+#OURPRO .box img{
+    margin: auto;
+    display: block;
+    width:6em ;
+    height: 6em;
+    border-radius: 100%;  
+    border: 6px solid rgb(7, 7, 7);
+}
+#OURPRO .box .secondary{
+    text-align: center;
+    font-size: small;
+}
+#OURPRO .box .centerL{
+    text-align: center;
+    justify-content: center;
+}
+#sec2{
+    text-align: center;
+}
+.table{
+    width: 100%;
+    height: 400px;
+}
+/* reviews done */
+/* people about us */
+.btnY{
+    border-radius: 9px;
+    background-color: orange;
+    font-size: 20px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+input{
+    font-size: 15px;
+    border-radius: 4px;
+}
+.sec3{
+  max-height: 20%;
+    background-color:rgb(114, 176, 22);
+}
+.FORM{
+    
+    text-align: center;
+}
+.h3{
+   text-align: center; 
+  color: antiquewhite;
+}
+.gr{
+    text-align: center;
+    color: azure;
+    font-size: 10px;
+}
+.last {
+    text-align: center;
+}
+.last .fa-map-marker .SPii{
+    color: rgb(12, 12, 12);
+}
+.last .fa-phone{
+    color: rgb(11, 233, 41);
+}
+.last .fa-envelope{
+    color: rgb(11, 233, 41);
+}
+.last .fa-map-marker{
+    color: rgb(11, 233, 41);
+}
+/* <footer> */
+#footer{
+    display: flex;
+    background-color: rgb(109, 168, 32);
+    max-height: fit-content;
+}
+.cloud{
+text-align: left;
+margin-top: 3%;
+margin-left: 6%;
+}
+.clo{
+    justify-content: left;
+    text-align: left;
+    color: antiquewhite;
+}
+.ser{
+    margin-top: 3%;
+   justify-content: left;
+   margin-left:12% ;
+   justify-items: left;
+
+}
+.ser3{
+    color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.ser li {
+    list-style: none;
+    padding: 4px 3px;
+}
+.ser li a{
+    color: antiquewhite;
+    text-decoration: underline;
+}
+.ser li a:hover{
+    color: rgb(9, 9, 9);
+    background-color: rgb(247, 167, 39);
+}
+.useful{
+    margin-top: 3%;
+   justify-content: left;
+   margin-left:12% ;
+   justify-items: left;
+
+}
+.use3{
+    color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.useful li {
+    list-style: none;
+    padding: 4px 3px;
+}
+.useful li a{
+    color: antiquewhite;
+    text-decoration: underline;
+}
+.useful li a:hover{
+    color: rgb(9, 9, 9);
+    background-color: rgb(247, 167, 39);
+}
+.follow{
+    margin-top: 3%;
+    justify-content: left;
+    margin-left:10% ;
+    justify-items: left;
+    
+
+}
+.follow3{
+    color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.SPI{
+    color: antiquewhite;
+}
+
+.fa-phone{
+    color: antiquewhite;
+}
+.fa-envelope{
+    color: antiquewhite;
+}
+.fa-whatsapp{
+    color: black;
+
+}
+.fa-instagram{
+    color: black;
+
+}
+.fa-twitter{
+    color: black;
+}
+.fa-facebook-square{
+    color: black;
+}
+.fa-google-plus{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 3 page
+.box1{
+    position: relative;
+    border: 4px solid grey;
+    width: 400px;
+    height: 450px;
+    
+    top: 80px;
+    font-size: 40px;
+    background-color: palegoldenrod;
+    border-radius: 15px;
+}
+.box2{
+    position: relative;
+    border: 4px solid grey;
+    width: 400px;
+    height: 450px;
+    left: 450px;
+    bottom: 110%;
+    /* top: 10px; */
+    /* font-size: 40px;
+    background-color: rgb(232, 249, 232);
+    border-radius: 15px; */
+    
+/* }
+
+.box3{
+    position: relative;
+    border: 4px solid rgb(68, 63, 63);
+    width: 400px;
+    height: 450px;
+    left:450px;
+    bottom: 110%;
+    font-size: 40px;
+    background-color: rgb(181, 200, 208);
+    border-radius: 15px;
+    
+}
+.saf{
+    text-align: center;
+}
+.abc{
+width: 60%;
+margin-left: 50px;
+} */ 
